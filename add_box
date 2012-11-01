@@ -1,0 +1,2 @@
+#!/bin/sh
+vagrant box add 'precise64' https://dl.dropbox.com/u/1543052/Boxes/UbuntuServer12.04amd64.box
