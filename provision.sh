@@ -29,3 +29,10 @@ fi
 
 /data/nfsen/bin/nfsen stop
 /data/nfsen/bin/nfsen start
+
+#setup fprobe
+
+echo "fprobe fprobe/collector string localhost:9995" | debconf-set-selections
+echo "fprobe fprobe/interface string eth0" | debconf-set-selections
+
+DEBIAN_FRONTEND=noninteractive apt-get -y install fprobe
