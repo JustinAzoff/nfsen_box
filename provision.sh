@@ -20,6 +20,8 @@ if [ ! -e nfsen-1.3.6p1.tar.gz ] ; then
     tar xvzf nfsen-1.3.6p1.tar.gz
 fi
 
+mkdir -p /data/nfsen
+
 if [ ! -e /var/www/nfsen ] ; then 
     cd nfsen-1.3.6p1/
     yes ''| ./install.pl /vagrant_data/nfsen.conf
